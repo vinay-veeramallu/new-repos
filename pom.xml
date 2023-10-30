@@ -30,6 +30,22 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+				    <cloudHubDeployment>
+				      <uri>https://anypoint.mulesoft.com</uri>
+				      <muleVersion>4.4.0</muleVersion>
+				      <username>vinay-nov</username>
+				      <password>Vinayv@40</password>
+				      <applicationName>vinay-training</applicationName>
+				      <environment>Sandbox</environment>
+				      <workers>1</workers>
+				      <workerType>MICRO</workerType>
+				      <objectStoreV2>true</objectStoreV2>
+				      <properties>
+					<key>value</key>
+				      </properties>
+				    </cloudHubDeployment>
+				  </configuration>
 			</plugin>
 			<plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
